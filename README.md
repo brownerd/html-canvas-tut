@@ -4,6 +4,15 @@ Learning about HTML Canvas. Following the tut [Learn HTML5 Graphics and Animatio
 
 ## Resources
 
+```js
+const canvas = document.createElement('canvas'),
+      context = canvas.getContext("2d")
+
+canvas.height = 600
+canvas.width = 400
+canvas.style.backgroundColor = 'red'
+document.body.appendChild(canvas)
+```
 
 
 ## Cloned from Budojo
