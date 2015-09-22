@@ -19,7 +19,7 @@ window.onload = function() {
   context.stroke();
 
   context.fillRect(0, 0, 50, 50)
-  context.strokeRect(200, 50, 100, 10)
+  context.clearRect(200, 50, 50, 300)
 
   context.beginPath();
   context.moveTo(0, 200)
