@@ -7,6 +7,8 @@ import once from 'once'
 import openURL from 'opn'
 import watchify from 'watchify'
 import babelify from 'babelify'
+import todo from 'gulp-todo'
+import notify from 'gulp-notify'
 
 const browser = 'google chrome canary'
 const argv = yargs
@@ -53,6 +55,15 @@ gulp.task('default', function(cb) {
   .once('update', function() {
     ready()
   })
+})
+
+gulp.task('todo', () => {
+ gulp.src('./*.js')
+   .pipe(todo({
+     customTags: ['NOTES']
+   }))
+   .pipe(gulp.dest('.'))
+   // -> Will output a TODO.md with your todos
 })
 
 // Just a task for Console loggin stuff

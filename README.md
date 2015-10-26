@@ -2,7 +2,15 @@
 
 Learning about HTML Canvas. Following the tut [Learn HTML5 Graphics and Animation](https://egghead.io/series/learn-html5-graphics-and-animation) at Egghead.io.
 
-## Resources
+## Other Resources
+
+I'm going to review this next
+- [Foundation HTML5 Animation with JavaScript](http://users.polytech.unice.fr/~strombon/camash/Foundation%20HTML5%20Animation%20with%20JavaScript/html5-animation-source-code/)
+
+
+---
+
+## Notes
 
 ```js
 const canvas = document.createElement('canvas'),
@@ -14,6 +22,7 @@ canvas.style.backgroundColor = 'red'
 document.body.appendChild(canvas)
 ```
 
+---
 
 ## Cloned from Budojo
 - [Budojo](https://github.com/brownerd/budojo)
