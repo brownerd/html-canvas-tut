@@ -1,11 +1,20 @@
-const canvas = document.createElement('canvas'),
-    context = canvas.getContext("2d")
+// Create
+const canvas = document.createElement('canvas')
+const context = canvas.getContext('2d')
 
-canvas.height = 600
-canvas.width = 400
-canvas.style.backgroundColor = 'red'
+// Append
 document.body.appendChild(canvas)
 
+// Dimensions
+canvas.height = 600
+canvas.width = 400
+
+// Style
+canvas.style.backgroundColor = 'red'
+
+
+
+// Onload
 window.onload = function() {
 
   context.beginPath();
@@ -18,9 +27,16 @@ window.onload = function() {
   //context.fill this will also close the path
   context.stroke();
 
+  // Box in upper left corner
+  context.fillStyle = '#00ff00'
   context.fillRect(0, 0, 50, 50)
-  context.clearRect(200, 50, 50, 300)
 
+  // remove section
+  // it works like an overlay
+  context.clearRect(200, 50, 50, 100)
+
+
+  // Lower shape
   context.beginPath();
   context.moveTo(0, 200)
   context.lineTo(300, 200)
@@ -28,5 +44,6 @@ window.onload = function() {
   context.lineTo(100, 300)
 
   context.closePath()
+  context.strokeStyle = '#fff'
   context.stroke()
 };
